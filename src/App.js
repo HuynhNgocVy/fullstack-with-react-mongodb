@@ -1,30 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-import { Footer, Blog, Possibility, Features, WhatGPT3, Header } from './containers'
-import { CTA, Brand, Navbar } from './components'
-function App() {
+import React, { useEffect, useState } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Login from './components/Login'
+import Home from './containers/Home'
+import UserContextProvider from './context/UserContext'
+import { useLocalStorage } from './localStorage/LocalStorage'
+
+
+const App = () => {  
+
   return (
-    <div className='App'>
-      <div className='gradient__bg'>
-        <Navbar />
-        <Header />
-      </div>
-      <Brand />
-      <WhatGPT3 />
-      <Possibility />
-      <CTA />
-      <Blog />
-      <Footer />
-    </div>
-    // <div className='App'>
-    //   <div className='gradient__bg'>
-    //     <Navbar />
-    //     <Header />
-    //   </div>
-    //   <Brand />
-      
-    // </div>
-  );
+    <UserContextProvider>    
+      <Routes>
+        <Route path="/*" element={<Home />} />
+        <Route path="/login" element={<Login/>} />
+      </Routes>
+    </UserContextProvider>
+  )
 }
 
-export default App;
+export default App

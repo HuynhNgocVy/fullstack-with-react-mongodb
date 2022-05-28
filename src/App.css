@@ -49,6 +49,116 @@ a {
 	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
+.dark {
+  background-color: #061426;
+  color: #cfd9e6;
+}
+.nav__img--container {
+  border: 3px solid  #a5aec0;
+}
+.arrow {
+  width: 55px;
+  height: 45px;
+  background-color: #4bb163;
+  border-radius: 30px 0 0 30px;
+  position: absolute;
+  right: 0
+}
+.border--gradiant {
+  border: 1px solid transparent;
+}
+.border--gradiant:hover {
+  border: 1px solid #636f80;
+  background-color: #0177fe;
+  box-shadow: 0px 10px 20px rgba(76, 118, 152, 0.3);
+}
+.border--search {
+  border: 1px solid #636f80;
+}
+.border--search:hover {
+  box-shadow: 0px 5px 10px rgba(82, 114, 141, 0.3)
+}
+.upload__container {
+  background-color: #020b1b;
+  border: 2px dashed #636f80;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pins__container {
+  width: 100%;
+  padding-left: 288px;
+  background-color: #fbfbfb;
+  color: #2f3d65;
+}
+input[type="text"]
+{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+/* Custom checkbox */
+
+.darkFeed {
+  background-color: #0a182a;
+  color: #f0f4f7;
+}
+.darkRight {
+  background-color: #0a182a;
+  color:#cfd9e6;
+}
+.light {
+  background-color: #f0f4f7;
+}
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -20px; /* gutter size offset */
+  /* max-width:200px ; */
+}
+.my-masonry-grid_column {
+  padding-left: 20px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  background: transparent;
+  margin-bottom: 20px;
+}
+
+.model__container {
+  position: fixed;
+  top:0;
+  right:0;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+}
+.uploadEle__container {
+  margin: auto;
+  background-color: #dce2f0;
+  z-index: 10;
+  width: 400px;
+  border-radius: 10px;
+}
+.input-file {
+  background-color: #f0f3fd;
+}
+.icons {
+  color: #adbbe4;
+}
+.icons-liked {
+  color: #ff6363;
+}
 @keyframes scale-up-center {
   0% {
     -webkit-transform: scale(0.5);
@@ -73,3 +183,137 @@ a {
     margin: 4rem 2rem;
   }
 }
+@media (max-width: 800px) {
+  .my-masonry-grid {
+    margin-left: -15px; /* gutter size offset */
+  }
+  .my-masonry-grid_column {
+    padding-left: 15px; /* gutter size offset */
+  }
+  .my-masonry-grid_column > div {
+    margin-bottom: 15px; /* space between items */
+  }
+}
+.scale-up-ver-top {
+	-webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.scale-up-hor-right {
+	-webkit-animation: scale-up-hor-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-hor-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+ @-webkit-keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+}
+@keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+}
+
+@-webkit-keyframes scale-up-hor-right {
+  0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+}
+@keyframes scale-up-hor-right {
+  0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  z-index: 100;
+}
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d4cbd8; 
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: #eaebf0; /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  color: red;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: red; 
+  border-color: gold;
+  color: gray;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  background: #4d0072;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
